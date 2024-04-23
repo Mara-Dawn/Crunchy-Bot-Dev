@@ -12,4 +12,7 @@ finally:
 
 files = ["key.txt", "tenor.txt", "openai.txt"]
 for file in files:
-    tmp = open(file, "w+")
+    try:
+        tmp = open(file, "x")
+    except FileExistsError:
+        pass
