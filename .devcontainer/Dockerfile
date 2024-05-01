@@ -17,4 +17,3 @@ WORKDIR /app
 RUN git clone https://github.com/Mara-Dawn/Crunchy-Bot
 
 WORKDIR /app/Crunchy-Bot
-RUN pre-commit install-hooks
