@@ -3,8 +3,8 @@ from sqlite3 import Error
 
 conn = None
 try:
-    conn = sqlite3.connect("database.sqlite")
-    conn_core = sqlite3.connect("core.sqlite")
+    conn = sqlite3.connect("season.sqlite")
+    conn_core = sqlite3.connect("database.sqlite")
 except Error as e:
     print(e)
 finally:
