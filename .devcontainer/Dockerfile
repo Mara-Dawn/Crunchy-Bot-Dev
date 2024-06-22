@@ -12,6 +12,8 @@ RUN cargo --help
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+RUN cargo install bob-nvim && bob install latest
+ENV PATH="${PATH}:/root//.local/share/bob/v0.10.0/nvim-linux64/bin"
 WORKDIR /app
 
 RUN git clone https://github.com/Mara-Dawn/Crunchy-Bot

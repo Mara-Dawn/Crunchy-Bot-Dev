@@ -9,5 +9,6 @@ services:
       - ./../key.txt:/app/Crunchy-Bot/key.txt
       - ./../openai.txt:/app/Crunchy-Bot/openai.txt
       - ./../tenor.txt:/app/Crunchy-Bot/tenor.txt
+      - ~/.config/nvim/:/root/.config/nvim/
     tty: true
-    command: sleep infinity
+    command: /bin/bash
