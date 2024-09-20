@@ -10,7 +10,7 @@ finally:
     if conn:
         conn.close()
 
-files = ["key.txt", "tenor.txt", "openai.txt"]
+files = ["key.txt", "tenor.txt", "openai.txt", "imgur.txt", "imgursecret.txt"]
 for file in files:
     try:
         tmp = open(file, "x")
