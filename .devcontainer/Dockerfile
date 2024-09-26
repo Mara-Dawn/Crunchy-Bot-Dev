@@ -14,6 +14,8 @@ RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
 
-RUN git clone https://github.com/Mara-Dawn/Crunchy-Bot
+ARG DEV_REPO_URL=https://github.com/Mara-Dawn/Crunchy-Bot
+
+RUN git clone $DEV_REPO_URL
 
 WORKDIR /app/Crunchy-Bot

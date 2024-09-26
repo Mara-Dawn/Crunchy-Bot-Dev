@@ -13,6 +13,7 @@ services:
       ADMIN_USER_ID: ${ADMIN_USER_ID}
       ADDITIONAL_SYNC_PERMISSIONS: ${ADDITIONAL_SYNC_PERMISSIONS}
       ERROR_LOG_CHANNEL_ID: ${ERROR_LOG_CHANNEL_ID}
+      DEV_REPO_URL: ${DEV_REPO_URL}
     volumes:
       - ./../database.sqlite:/app/Crunchy-Bot/database.sqlite
     tty: true
