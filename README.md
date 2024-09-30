@@ -5,7 +5,7 @@ Dev Container repo for Crunchy Bot
 1. Open VSCode and Clone this repo as a new Project
 2. Install [Docker Desktop](https://www.docker.com/get-started/)
 3. Install the VSCode extensions *Dev Containers* (maybe *Docker* too, just to be sure)
-4. Open the .env file and fill out the env variables, put your forked repository in `DEV_REPO_URL`
+4. Open the .env file and fill out the env variables, put your forked repository url in `DEV_REPO_URL`
 5. Click the blue X looking thingy in the very bottom left of your IDE
 6. select 'Reopen in Container'
 7. Wait for the container to build.
