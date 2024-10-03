@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+      args:
+        DEV_REPO_URL: ${DEV_REPO_URL}
     environment:
       DISCORD_API_KEY: ${DISCORD_API_KEY}
       IMGUR_API_KEY: ${IMGUR_API_KEY}
@@ -13,7 +15,6 @@ services:
       ADMIN_USER_ID: ${ADMIN_USER_ID}
       ADDITIONAL_SYNC_PERMISSIONS: ${ADDITIONAL_SYNC_PERMISSIONS}
       ERROR_LOG_CHANNEL_ID: ${ERROR_LOG_CHANNEL_ID}
-      DEV_REPO_URL: ${DEV_REPO_URL}
     volumes:
       - ./../database.sqlite:/app/Crunchy-Bot/database.sqlite
     tty: true
